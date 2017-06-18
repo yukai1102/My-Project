@@ -1,0 +1,391 @@
+@charset "Utf-8";
+@font-face {font-family: 'iconfont';
+    src: url('../font/iconfont.eot'); /* IE9*/
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    height: 1000px;
+}
+/*右边的黑状态栏开始*********************************/
+/*所有李标签*/
+.statu_bar{
+    height: 100%;
+    width: 35px;
+    background-color: black;
+    position: fixed;
+    top:0;
+    right: 0;
+    z-index: 100000;
+}
+.statu_bar ul{
+    width: 35px;
+    position: absolute;
+    top: 50%;
+    margin-top:-130px;
+
+
+}
+.statu_bar ul li{
+    width: 100%;
+    height: 35px;
+    border: 1px solid #000;
+    cursor: pointer;
+    position: relative;
+}
+.statu_bar li>a{
+     /*color:#fff;*/
+     float: left;
+     width: 100%;
+     height: 100%;
+     font:normal 22px/35px "microsoft yahei";
+     text-align: center;
+ }
+
+/*购物车不一样*/
+.statu_bar ul li.car1{
+    text-align: center;
+    height:120px;
+
+}
+.statu_bar ul .carr{
+    display:inline-block;
+    width: 20px;
+    height: 100px;
+    font:normal 20px/20px "microsoft yahei";
+    margin: 10px 8px;
+}
+.statu_bar .carr:hover .iconfont{
+    color: white;
+}
+.statu_bar .carr .iconfont{
+    color: red;
+}
+.statu_bar  .goCar{
+    font:normal 14px/20px "microsoft yahei";
+}
+.statu_bar .iconfont:hover .statu_bar ul li{
+    background: pink;
+}
+/*最后下面两个*/
+.statu_bar .ewmli,.statu_bar .toTopli{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    font:normal 22px/35px "microsoft yahei";
+}
+.statu_bar .ewmli a,.statu_bar .toTopli a{
+    float: left;
+    width: 100%;
+    height: 100%;
+    font:normal 22px/35px "microsoft yahei";
+    text-align: center;
+}
+.statu_bar .toTopli{
+    bottom: 0;
+}
+.statu_bar .ewmli{
+    bottom: 35px;
+}
+.ewmli:hover,.toTopli:hover{
+    backgroundColor:#FF3C1F;
+}
+/*每个图标字体的解释-------------------------------*/
+.statu_bar ul li .explain{
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    background-color: #494949;
+    left: -150px;
+    text-align: center;
+    line-height: 35px;
+    color:#fff;
+    display: none;
+}
+.statu_bar  .explain em{
+    position: absolute;
+    right: -16px;
+    top: 8px;
+    height: 0;
+    border: 8px solid rgba(0,0,0,0) ;
+    border-left-color:rgba(73,73,73,1);
+}
+/*二维码页面*/
+.ewmli .erweimadiv{
+    position: absolute;
+    left: -150px;
+    bottom: 0;
+    height: 150px;
+    width: 150px;
+    background-color: #FF3C1F;
+    border-radius: 5px;
+    display: none;
+}
+
+.ewmli .erweimadiv em{
+    position: absolute;
+    right: -16px;
+    bottom: 8px;
+    border: 8px solid rgba(0,0,0,0) ;
+    border-left-color:#FF3C1F;
+}
+.ewmli .erweimadiv a.pic{
+    margin-top: 10px;
+    height: 100px;
+}
+.ewmli .erweimadiv img {
+    width: 100px;
+
+}
+.ewmli .erweimadiv s{
+    height: 26px;
+    font:bold 14px/26px "simsun";
+    text-decoration: none;
+
+}
+.ewmli .erweimadiv .ewm-info:hover{
+    color: #D0D8E2;
+    font-size: 16px;
+}
+.ewmli .iconfont:hover .erweimadiv{
+    display: inline-block;
+}
+/*右边的黑状态栏结束*********************************/
+/*登录界面*/
+.userlogin{
+    position: absolute;
+    left: -301px;
+    height: 400px;
+    width: 300px;
+    border: 1px solid grey;
+    background-color: #fff;
+    top:0px;
+
+
+}
+.userlogin em{
+    position: absolute;
+    right: -16px;
+    top: 188px;
+    height: 0;
+    border: 8px solid rgba(0,0,0,0) ;
+    border-left-color:#fff;
+}
+.userlogin span.close-login{
+    position: absolute;
+    right: 5px;
+    top:5px;
+    background-color: #adadad;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.userlogin span.close-login:hover{
+    background-color: #6e6e6e;
+    color:#fff;
+}
+.userlogin h5{
+    height:30px;
+    font:normal 20px/30px "microsoft yahei";
+    top: 87px;
+    left: 29px;
+    position: absolute;
+}
+
+.userlogin img.sas{
+    width: 150px;
+    position: absolute;
+    left: 75px;
+    top: 120px;
+}
+.userlogin .passlogin{
+    position: absolute;
+    width: 50px;
+    right: 5px;
+    top: 18px;
+}
+.userlogin .passlogin .noticeimg{
+    position: absolute;
+    left: -198px;
+    top:20px;
+}
+.userlogin .saosao{
+    height: 40px;
+    position: absolute;
+    top: 297px;
+    left: 54px;
+    width: 195px;
+}
+
+.userlogin .saosao img{
+    float: left;
+}
+.userlogin .saosao .saosao-info{
+    float: left;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left:10px;
+    color: #555;
+}
+.userlogin .saosao .saosao-info a{
+    font-size: 12px;
+    height: 20px;
+    width: 30px;
+    float: none;
+    color: #ff0036;
+    line-height: 20px;
+
+}
+.userlogin .saosao .saosao-info p{
+    height: 20px;
+    line-height: 20px;
+}
+.userlogin .saosao .saosao-info a:hover{
+    text-decoration: underline;
+}
+.userlogin .shortcut-login{
+    position: absolute;
+    text-align: right;
+    right: -30px;
+   bottom: -40px;
+
+}
+.userlogin .shortcut-login a{
+    font-size: 12px;
+    height: 20px;
+    width: 30px;
+    float: none;
+    color: #707070;
+    line-height: 20px;
+}
+
+/*密码登录区**************************/
+
+.usernamediv{
+    position: absolute;
+    height: 40px;
+    width: 240px;
+    background-color: pink;
+    top: 170px;
+    left: 30px;
+    border: 1px solid #695666;
+}
+.usernamediv:hover{
+    border-color: #000;
+}
+.usernamediv span{
+    float: left;
+    height: 40px;
+    width: 40px;
+    background: url("../images/loginimg.jpg") no-repeat center center;
+}
+.usernamediv input{
+    height: 40px;
+    width: 200px;
+    outline-style: none;
+    border: 0;
+
+}
+.userpassdiv{
+    position: absolute;
+    height: 40px;
+    width: 240px;
+
+    top: 240px;
+    left: 30px;
+    border: 1px solid #695666;
+}
+.userpassdiv:hover{
+    border-color: #000;
+}
+.userpassdiv span{
+    float: left;
+    height: 40px;
+    width: 40px;
+    background: url("../images/passwordImg.jpg") no-repeat center center;
+}
+.userpassdiv input{
+    height: 40px;
+    width: 200px;
+    outline-style: none;
+    border: 0;
+
+
+}
+
+.loginBar {
+    background-color: #ff0036;
+    height: 40px;
+    width: 240px;
+    font:bold 16px/40px "microsoft yahei";
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    left: 30px;
+    top: 306px;
+    border: 1px solid #695666;
+    cursor: pointer;
+}
+.loginBar:hover{
+    background-color: #ff2313;
+    border-color: #000;
+}
+
+.form2 .write div,.form2{
+    display: none;
+}
+.userlogin{
+    display: none;
+}
+
+/*密码登录区*********end*****************/
+
+
+/*<!--左边轮播图引导----------begin---------------------------->*/
+.statu-left{
+    height: 100px;
+    width: 10px;
+    padding:0 5px 10px 5px;
+    background-color: rgba(55,55,55,0.4);
+    position: absolute;
+    top:50%;
+    margin-top: -55px;
+    left: 50px;
+    border-radius: 10px;
+    position: fixed;
+    display: none;
+}
+.statu-left li{
+    width: 10px;
+    height: 10px;
+    list-style:none;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-top:10px;
+
+}
+.statu-left li.currentt{
+    background-color: #ff260f;
+
+}

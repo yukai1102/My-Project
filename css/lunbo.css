@@ -1,0 +1,24 @@
+@charset "UTF-8";
+.wm_run_main{
+    width: 990px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    /*background-color: red;*/
+}
+.wm_run_main ul{
+    width: 3000px;
+    height: 500px;
+    position: absolute;
+    /*background-color: red;*/
+}
+.wm_run_main ul li{
+    float: left;
+}
+.wm_run_main ul li .wmzt a{
+    margin-right: 10px;
+}
+.wm_run_main ul li .wmzt a img{
+    width: 730px;
+    height: 500px;
+}

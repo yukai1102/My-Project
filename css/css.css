@@ -1,0 +1,872 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;  /*清除元素的内外边距*/
+}
+body {
+    font: 12px/150% "microsoft yahei" ,"SimSun", "宋体",Arial, Verdana, "\5b8b\4f53"; /*unitedCode的写法，宋体的写法*/
+    /*color: #666; /*150%基于当前字体尺寸的百分比行间距*/
+    /*background: #F0F0F0;*/
+}
+table {
+    border-collapse: collapse; /*合并外连线*/
+}
+ul, ol {
+    list-style: none;
+}
+img {
+    border: 0;
+    vertical-align: middle; /*  去掉图片底部默认的3像素空白缝隙*/
+}
+a{
+    text-decoration: none;
+    /*color: #999999;*/
+}
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";  /*字体的自动识别*/
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*--------------------------字体图标02*/
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font_02/iconfont.eot');
+    src: url('../font_02/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font_02/iconfont.woff') format('woff'),
+    url('../font_02/iconfont.ttf') format('truetype'),
+    url('../font_02/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*顶部开始*/
+.w{
+    width: 1190px;
+    margin: 0 auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.topBanner{
+    width: 100%;
+    height: 26px;
+    background-color: #f2f2f2;
+}
+/*导航栏左边超链接*/
+.topBanner .flul li{
+    float: left;
+    color: #999999;
+    margin-right:  20px;
+    line-height: 26px;
+    font-family: "SimSun", "宋体"
+}
+.flul li a{
+    color: #999999;
+}
+.flul li a:hover{
+    color: #ff0036;
+    text-decoration: underline;
+}
+/*左边的第一个图标*/
+.flul .iconfont{
+    font-size: 12px;
+    color:#ff0036 ;
+    font-weight: bold;
+    margin-right: 4px;
+}
+/*导航栏右边超链接*/
+.topBanner .frul>li{
+    float: left;
+    color: #999999;
+    margin-right: 14px;
+    line-height: 26px;
+    text-align: center;
+
+}
+.topBanner .frul .frulFirst{
+    border-right: 1px solid #f2f2f2;
+    border-left: 1px solid #f2f2f2;
+    width: 72px;
+    height: 26px;
+}
+/*网站导航的宽度*/
+.frul .lieB{
+    width: 84px;
+    height: 26px;
+    /*padding-right: 5px;*/
+    border-right: 1px solid #f2f2f2;
+    border-left: 1px solid #f2f2f2;
+}
+.topBanner .frul .frulFirst:hover{
+    background-color: #fff;
+}
+/*右边的超链接*/
+.frul>li a{
+    color: #999999;
+    font-family: "SimSun", "宋体";
+}
+.frul>li a:hover{
+    color: #ff0036;
+    text-decoration: underline;
+    font-family: "SimSun", "宋体";
+}
+/*右边的顶部通栏字体图标*/
+.frul .frulone span{
+    font-size: 12px;
+    font-weight: bold;
+    color: #ff0036;
+    margin-right: 2px;
+}
+.frul .frulcar span{
+    color: #ff0036;
+    margin-right: 2px;
+    /*margin-left: 4px;*/
+}
+.frul .frulFive span{
+    font-size: 12px;
+    color: #ff0036;
+    /*color: red;*/
+    margin-right: 2px;
+    font-weight: bold;
+}
+
+.frul .lieB span{
+    font-size: 12px;
+    font-weight: bold;
+    color: #ff0036;
+    margin-right: 2px;
+}
+/*倒三角的字体颜色*/
+.frul .frulFirst a #pwchao{
+    color: #bbbbbb;
+}
+.frul .frulFour span{
+    color: #bbbbbb;
+    /*position: relative;*/
+    /*top: 2px;*/
+}
+.frul .frulLast span{
+    /*position: relative;*/
+    /*top: 2px;*/
+    color: #bbbbbb;
+}
+#lieB .daoSj{
+    color: #bbbbbb;
+}
+/*右边超链接的下拉框 ul*/
+.frul li .chilUl{
+    /*color: red;*/
+    height: 32px;
+    position: absolute;
+    /*left: 640px;*/
+    line-height: 20px;
+    border: 1px solid #f2f2f2;
+    border-top: 0px;
+    padding: 8px 12px 16px 12px;
+    margin-top: -2px;
+    margin-left: -1px;
+    background-color: #fff;
+    display: none;
+    z-index: 99;
+}
+.frul li .chilUl a{
+    color: #666666;
+}
+.frul li .chilUl a:hover{
+    color: #ff0036;
+    text-decoration: underline;
+}
+
+.frul .shuX span{
+    color: #cccccc;
+    margin-left: -10px;
+}
+/*右边超链接的下拉框 ul*/
+.frul .frulFour{
+     width: 60px;         /*收藏夹的宽度*/
+     height: 26px;
+    border-right: 1px solid #f2f2f2;
+    border-left: 1px solid #f2f2f2;
+ }
+/*收藏夹的移入事件*/
+.frul .frulFour:hover{
+    background-color: #fff;
+}
+/*隐藏的收藏夹*/
+.frul li .eq01{
+    color: #666666;
+    height: 32px;
+    width: 58px;
+    position: absolute;
+    line-height: 20px;
+    padding: 8px 12px 16px 12px;
+    border: 1px solid #f2f2f2;
+    border-top: 0px;
+    margin-top: -2px;
+    margin-left: -1px;
+    background-color: #fff;
+    /*z-index: 99;*/
+    display: none;
+
+}
+.frul li .eq01 a{
+    color: #666666;
+}
+.frul li .eq01 a:hover{
+    color: #ff0036;
+    text-decoration: underline;
+}
+.frul .frulFiveimg>img{
+    height: 228px;
+    width: 175px;
+    border:1px solid #d4d4d4;;
+    margin-top: -1px;
+    position: absolute;
+    left: 860px;
+    display: none;
+}
+/*商家支持*/
+.topBanner .frulLast{
+    border-right: 1px solid #f2f2f2;
+    border-left: 1px solid #f2f2f2;
+    width: 72px;
+    height: 26px;
+}
+.topBanner .frulLast:hover{
+    background-color: #fff;
+}
+.frulLast .last01{
+    width: 119px;
+    height: 175px;
+    padding: 5px 12px 5px 10px ;
+    position: absolute;
+    left: 1021px;
+    border: 1px solid #f2f2f2;
+    border-top: 0px;
+    line-height: 22px;
+    margin-top: -2px;
+    text-align: left;
+    background-color: #fff;
+    display: none ;
+}
+.frulLast .last01 li a{
+    color: #666666;
+}
+.frulLast .last01 a:hover{
+    color: #ff0036;
+}
+.frulLast .last01>.sjFl{
+    color: #787878;
+    font-size: 12px;
+}
+.frulLast .last01>div{
+    border-top: 1px dotted #827777;
+    border-bottom: 1px dotted #827777;
+    margin-top: 9px;
+}
+
+/*帮助中心*/
+.frulLast .last01 div h3{
+    color: #787878;
+    font-size: 12px;
+}
+.frulLast .last01 div a{
+    color: #787878;
+}
+/**-----------------网站导航隐藏最大盒子 */
+
+.frul .lieB>div{
+    width: 1175px;
+    height: 251px;
+    border: 1px solid #f2f2f2;
+    border-top: 0px;
+    position: absolute;
+    right: 102px;
+    margin-top: -1px;
+    /*background-color: #fff;*/
+    background-color: #fbfef2;
+}
+.frul .lieB:hover{
+    background-color: #fff;
+}
+/*------网站导航隐藏最大盒子第一个div---- */
+.bigYcang{
+    display: none;
+}
+.bigLA {
+    float: left;
+    width: 375px;
+    height: 200px;
+    margin: 24px 0 26px 29px;
+    border-right: 1px solid #f5f5f5;
+}
+
+.bigLA .pwcUlone{
+    float: left;
+    margin-top: 13px;
+}
+.bigLA .pwcUlone li{
+    text-align: left;
+    line-height: 28px;
+}
+.bigLA .pwcUlone li a{
+    /*color: #666666;*/
+    color: #f10180;
+    font-weight: bold;
+}
+.bigLA .pwcUlone li a:hover{
+    /*color: #f56a00;*/
+    /*font-size: 12px;*/
+    font-weight: bold;
+    color: #f10180;
+}
+
+.bigLA h3{
+    font-size: 18px;
+    text-align: left;
+    color: #ff0036;
+    font-weight: bold;
+
+}
+
+/*大隐藏盒子的第二个ul标签*/
+.bigLA .pwcUltwo{
+    margin-top: 13px;
+    margin-left: 48px;
+}
+
+.bigLA .pwcUltwo li{
+    line-height: 28px;
+    text-align: left;
+}
+.bigLA .pwcUltwo li a{
+    color: #f10180;
+    font-weight: bold;
+}
+.bigLA .pwcUltwo li a:hover{
+    color: #f10180;
+    /*font-size: 14px;*/
+    font-weight: bold
+}
+
+/*大隐藏盒子的第三个ul标签*/
+.bigLA .pwcUlthree{
+    margin-top: 13px;
+    margin-left: 48px;
+}
+.bigLA .pwcUlthree li{
+    line-height: 28px;
+    text-align: left;
+}
+.bigLA .pwcUlthree li a{
+    /*color: #666666;*/
+    color: #f10180;
+    font-weight: bold;
+}
+.bigLA .pwcUlthree li a:hover{
+    /*font-size: 14px;*/
+    font-weight: bold;
+}
+/*大隐藏盒子的第四个ul标签*/
+.bigLA .pwcUlfour{
+    margin-top: 13px;
+    margin-left: 48px;
+}
+.bigLA .pwcUlfour li{
+    line-height: 28px;
+    text-align: left;
+}
+.bigLA .pwcUlfour li a{
+    color: #f10180;
+    font-weight: bold;
+}
+.bigLA .pwcUlfour li a:hover{
+    font-weight: bold;
+    /*font-size: 14px;*/
+}
+
+/*网站导航隐藏最大盒子第二个div */
+
+.bigLB{
+    float: left;
+    width: 375px;
+    height: 200px;
+    margin: 24px 0 26px 29px;
+    border-right: 1px solid #f5f5f5;
+}
+.bigLB h3{
+    font-size: 18px;
+    text-align: left;
+    color: #336fd7;
+    font-weight: bold;
+}
+/*网站导航隐藏最大盒子第二个div  */
+/* *-----第一个ul-----*/
+.bigLB .pwcbigLBone{
+    /*float: left;*/
+    margin-top: 13px;
+}
+.bigLB .pwcbigLBone li{
+    line-height: 28px;
+    text-align: left;
+}
+.bigLB .pwcbigLBone a{
+    color: #05bba9;
+    font-weight: bold;
+}
+.bigLB .pwcbigLBone li a:hover{
+    color: #05bba9;
+    font-weight: bold;
+}
+/* *-----第二个ul-----*/
+.bigLB .pwcbigLBtwo{
+    margin-top: 13px;
+    margin-left: 65px;
+}
+.bigLB .pwcbigLBtwo li{
+    line-height: 28px;
+    text-align: left;
+}
+.bigLB .pwcbigLBtwo li a{
+    /*color: #666666;*/
+    font-weight: bold;
+    color: #05bba9;
+}
+.bigLB .pwcbigLBtwo li a:hover{
+    color: #05bba9;
+    font-weight: bold;
+}
+
+/* *-----第三个ul-----*/
+.pwcbigLBthree{
+    margin-top: 13px;
+    margin-left: 65px;
+}
+.bigLB .pwcbigLBthree li{
+    line-height: 28px;
+    text-align: left;
+}
+.bigLB .pwcbigLBthree li a{
+    color: #05bba9;
+    font-weight: bold;
+}
+.bigLB .pwcbigLBthree li a:hover{
+    color: #05bba9;
+    font-weight: bold;
+}
+
+/* *-----第四个ul-----*/
+.pwcbigLBfour{
+    margin-top: 13px;
+    margin-left: 65px;
+}
+.bigLB .pwcbigLBfour li{
+    line-height: 28px;
+    text-align: left;
+}
+.bigLB .pwcbigLBfour li a{
+    color: #05bba9;
+    font-weight: bold;
+}
+.bigLB .pwcbigLBfour li a:hover{
+    color: #05bba9;
+    font-weight: bold;
+}
+/*网站导航隐藏最大盒子第三个div  */
+.bigLC{
+    float: left;
+    width: 175px;
+    height: 200px;
+    margin: 24px 0 26px 30px;
+    border-right: 1px solid #f5f5f5;
+}
+.bigLC h3{
+    font-size: 18px;
+    text-align: left;
+    color: #ff4d6a;
+    font-weight: bold;
+}
+/*-------第一个ul-------*/
+.bigLC .pwcbigLBone{
+    margin-top: 13px;
+}
+.bigLC .pwcbigLBone li{
+    line-height: 28px;
+    text-align: left;
+}
+.bigLC .pwcbigLBone li a{
+    color: #ff6061;
+    font-weight: bold;
+}
+.bigLC .pwcbigLBone li a:hover{
+    font-weight: bold;
+    color: #ff6061;
+}
+/*-------第二个ul-------*/
+
+.bigLC .pwcbigLBtwo{
+    margin-top: 13px;
+    margin-left: 36px;
+}
+.bigLC .pwcbigLBtwo li{
+    line-height: 28px;
+    text-align: left;
+}
+.bigLC .pwcbigLBtwo a{
+    color: #ff6061;
+    font-weight: bold;
+}
+.bigLC .pwcbigLBone li a:hover{
+    color: #ff6061;
+    font-weight: bold;
+}
+
+/*网站导航隐藏最大盒子第四个div  */
+.bigLD{
+    float: left;
+    width: 125px;
+    height: 200px;
+    margin: 24px 0 26px 30px;
+}
+.bigLD h3{
+    font-size: 18px;
+    text-align: left;
+    color: #666666;
+    font-weight: bold;
+}
+.bigLD .pwcbigLBone li{
+    line-height: 32px;
+    text-align: left;
+}
+
+.bigLD .pwcbigLBone li a{
+    color: red;
+    font-weight: bold;
+}
+.bigLD .pwcbigLBone li a:hover{
+    font-size: 14px;
+}
+/*-------------网站导航隐藏最大盒子第一个div -----火  */
+.pwcUlone .hotone{
+    color: #ff0036;
+    position: absolute;
+    top: 110px;
+    left: 80px;
+}
+.pwcUltwo .hottwo{
+    color: #ff0036;
+    position: absolute;
+    top: 82px;
+    left: 175px;
+}
+.pwcUlthree .hotone{
+    color: #ff0036;
+    position: absolute;
+    top: 53px;
+    left: 271px;
+}
+.pwcUlthree .hottwo{
+    color: #ff0036;
+    position: absolute;
+    top: 112px;
+    left: 257px;
+}
+.pwcUlfour .hotone{
+    color: #ff0036;
+    position: absolute;
+    top: 54px;
+    left: 369px;
+}
+/**-------------网站导航隐藏最大盒子第二div -----火  **/
+.pwcbigLBtwo .hotone{
+    color: #ff0036;
+    position: absolute;
+    top: 141px;
+    left: 572px;
+}
+.pwcbigLBthree .hotone{
+    color: #ff0036;
+    position: absolute;
+    top: 55px;
+    left: 685px;
+}
+.pwcbigLBthree .hottwo{
+    color: #ff0036;
+    position: absolute;
+    top: 85px;
+    left: 674px;
+}
+.pwcbigLBfour .hotone{
+    color: #ff0036;
+    position: absolute;
+    top: 113px;
+    left: 775px;
+}
+/*header头部开始*/
+.header{
+    height: 85px;
+    width: 100%;
+    /*background-color: pink ;*/
+    background-color: #ffffff ;
+    border-top: 1px solid #e5e5e5;
+}
+/*天猫logo*/
+.header .headerLogo{
+    margin-top: 23px;
+}
+/*------------------------店铺名称*/
+.header .pwcQjd{
+    height: 38px;
+    width: 142px;
+    margin-top: -8px;
+    vertical-align: bottom;
+    border-left: 1px solid #f0f0f0;
+    /*border-right: 1px dotted #f0f0f0;*/
+    margin-left: 23px;
+}
+.header .pwcQjd>div{
+    margin-left: 10px;
+}
+.header .pwcQjd .pwcQjdone>p>a{
+    font-size: 12px;
+    font-weight: bold;
+    color:#333333 ;
+    font-family: "microsoft yahei";
+}
+.header .pwcQjd .pwcQjdone>p>a:hover{
+    text-decoration: underline;
+}
+.header .pwcQjd>div>div{
+    height: 14px;
+    width: 50px;
+    background-color: #f4c985;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 14px;
+    border: 1px solid #e7ba77;
+    font-family: "microsoft yahei";
+}
+
+/*---------------------------旺旺头像*/
+.header .pwcQjd>div>a{
+    position: absolute;
+    top:63px;
+    left: 318px;
+    font-size: 16px;
+    color: #1c9eff;
+}
+.header .pwcfuWu{
+    height: 38px;
+    width: 120px;
+    float: left;
+    margin-top: -8px;
+    margin-left: 16px;
+    border-right:  1px solid #f0f0f0;
+}
+.header .pwcfuWu>span{
+    color: #999999;
+}
+.header .pwcfuWu>p{
+    color: #ff0036;
+    /*font-weight: bold;*/
+}
+.header .pwcfuWu>p>span{
+    font-weight: bold;
+}
+.header .pwcfuWu>a{
+    width: 6px;
+    position: absolute;
+    top: 50px;
+    left: 508px;
+    color: #cccccc;
+}
+/*手机二维码*/
+.pwcSj{
+    height: 38px;
+    width: 36px;
+    margin-left: 12px;
+    margin-top: -8px;
+    float: left;
+}
+.pwcSj>p{
+    color: #999999;
+}
+.pwcSj>p>img{
+   margin-left: 6px;
+}
+.pwcSj>span{
+    position: absolute;
+    width: 6px;
+    top: 61px;
+    left: 570px;
+    color: #cccccc;
+}
+.pwcSj .pwcSjimg{
+    height: 178px;
+    width: 160px;
+    border: 1px solid #e4e4e4;
+    border-bottom: 0px;
+    position: absolute;
+    left: 530px;
+    /*top: 20px;*/
+    /*margin-top: 12px;*/
+    display: none;
+}
+/*搜索框开始*/
+.pwcSs{
+    margin-top: -8px;
+}
+.header .pwcSs input{
+    height: 30px;
+    width: 375px;
+    border: 3px solid #ff0036;
+    text-indent: 6px;
+    margin-left: 135px;
+}
+.header .pwcSs .pwcbtnone{
+    height: 36px;
+    width: 80px;
+    background-color: #ff0036;
+    display: inline-block;
+    text-align: center;
+    line-height: 36px;
+    color: #ffffff;
+    font-size: 16px;
+    vertical-align: top;
+}
+.header .pwcSs .pwcbttwo{
+    height: 36px;
+    width: 80px;
+    background-color: #333333;
+    display: inline-block;
+    text-align: center;
+    line-height: 36px;
+    color: #ffffff;
+    font-size: 16px;
+    vertical-align: top;
+    margin-left: 2px;
+}
+/* ---------------------店铺动态评分*/
+.header .pwcPfen{
+    position: absolute;
+    width: 268px;
+    height: 280px;
+    border: 1px solid #e5e5e5;
+    border-top: 0px;
+    left: 251px;
+    top: 75px;
+    background-color: #fff;
+    /*padding-left: 12px;*/
+    padding: 18px 0 10px 10px;
+    display: none;
+}
+.pwcPfen .firstpwcPfen .firstpwcPfenone li{
+    margin-top: 3px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #959595;
+}
+.pwcPfen .firstpwcPfen .firstpwcPfenone li>span{
+    color: #0000ee;
+}
+.pwcPfen .firstpwcPfen .firstpwcPfetwo{
+    float: right;
+    margin-right: 55px;
+}
+.pwcPfen .firstpwcPfen .firstpwcPfetwo li{
+    margin-top: 3px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #959595;
+}
+.pwcPfen .firstpwcPfen .firstpwcPfetwo li>span{
+    color: #ff0036;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+/*-----------------店铺服务:*/
+.pwcPfen .firstpwcFw{
+    height: 117px;
+    width: 250px;
+    /*padding: 14px 0;*/
+    margin-top: 14px;
+    border-top: 1px dotted #dbdbdb;
+    /*border-bottom: 1px dotted #dbdbdb;*/
+}
+.pwcPfen .firstpwcFw .firstpwcFwH4{
+    margin-top: 14px;
+}
+.pwcPfen .firstpwcFw .firstpwcFwone{
+    margin-top: 10px;
+}
+.pwcPfen .firstpwcFw .firstpwcFwone li{
+    line-height: 22px;
+}
+.pwcPfen .firstpwcFw .firstpwcFwone li>a{
+    color: #1c9eff;
+}
+.firstpwcFw .firstpwcFwoneA #A{
+   color: #999999;
+}
+.firstpwcFw .firstpwcFwoneA>#A:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    color: #ff0036;
+}
+/*-----------------收藏本店:*/
+.firstpwcsC {
+    /*padding-top: 16px;*/
+    margin-top: 16px;
+    padding-top: 10px;
+    border-top:1px dotted #dbdbdb;
+}
+
+.firstpwcsC .firstpwcsCone>a{
+    height: 28px;
+    width: 98px;
+    display: inline-block;
+    background-color: #f2f2f2;
+    color: #404040;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 28px;
+    margin-left: 10px;
+}
+.firstpwcsC .firstpwcsCtwo a{
+    height: 28px;
+    width: 98px;
+    display: inline-block;
+    background-color: #ff0036;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 28px;
+    margin-left: 39px;
+    margin-right: 10px;
+}

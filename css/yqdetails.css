@@ -1,0 +1,574 @@
+@charset "utf-8";
+/*初始化-start*/
+body {
+    color: #333;
+    background: #fff;
+}
+
+body, th, td, .p1, .p2 {
+    font-family: arial
+}
+
+body, p, form, ol, ul, li, dl, dt, dd, h3 {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+table, img {
+    border: 0
+}
+
+/*初始化-end*/
+/*版心样式-start*/
+.yq-banxin {
+    width: 1145px;
+    margin: 0 auto;
+}
+
+/*版心样式-end*/
+.yq-details {
+    position: relative;
+    margin-top: 20px;
+}
+
+/*展示大图片样式-start*/
+.yq-details-bigPic {
+    width: 420px;
+    height: 420px;
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    line-height: 420px;
+    cursor: pointer;
+}
+
+.yq-details-bigPic .mask {
+    width: 210px;
+    height: 210px;
+    background-color: deepskyblue;
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: move;
+    display: none;
+}
+
+/*展示大图片样式-end*/
+/*放大镜图片样式-start*/
+.yq-details-pic {
+    width: 420px;
+    height: 420px;
+    position: absolute;
+    left: 440px;
+    top: 0;
+    overflow: hidden;
+    display: none;
+}
+
+.yq-details-pic img {
+    position: absolute;
+}
+
+/*放大镜图片样式-start*/
+/*小图片样式-start*/
+.yq-details-smallPic {
+    width: 420px;
+    height: 80px;
+    position: absolute;
+    top: 440px;
+    padding: 10px;
+
+}
+
+.yq-details-smallPic ul li {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 18px;
+    cursor: pointer;
+}
+
+.yq-details-smallPic ul li:hover {
+    border: 3px solid #000;
+}
+
+/*小图片样式-end*/
+/*商品详情样式--start*/
+.yq-goodDetails {
+    width: 530px;
+    height: 420px;
+    position: absolute;
+    left: 440px;
+    top: 0;
+    font-size: 12px;
+    color: #9e9eab;
+}
+
+/*标题样式*/
+.yq-goodDetails h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #000;
+}
+
+.yq-goodDetails p.yq-goodTil {
+    font: normal 14px/18px "microsoft yahei";
+    color: #ff0036;
+}
+
+/*标题样式*/
+/*中间价格区域样式*/
+.yq-goodDetails .yq-price {
+    width: 490px;
+    height: 88px;
+    background-color: #e9e9e9;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.yq-price .yq-tMall,
+.yq-price .yq-off {
+    display: inline-block;
+    height: 15px;
+    border-radius: 10%;
+    text-align: center;
+    line-height: 15px;
+    font-family: "microsoft yahei";
+}
+
+.yq-price .yq-tMall {
+    width: 28px;
+    background-color: #fff;
+    border: 1px solid #ee9393;
+}
+
+.yq-price .yq-off {
+    background-color: #dd2727;
+    width: 38px;
+    border: 1px solid #dd2727;
+    color: #ffffff;
+}
+
+.yq-price .yq-offGet {
+    margin-left: 230px;
+    color: #ff0037;
+}
+
+.yq-price .yq-offGet > span {
+    font-family: "simsun";
+}
+
+.yq-price .yq-midPrice {
+    margin-top: 10px;
+}
+
+.yq-lottery {
+    height: 313px;
+    width: 428px;
+    position: absolute;
+    left: 45px;
+    top: 130px;
+    display: none;
+    z-index: 99;
+}
+
+.yq-lottery span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.yq-price .yq-midPrice .yq-curPrice {
+    font-size: 20px;
+    color: #ff0036;
+    font-family: "microsoft yahei";
+    font-weight: bold;
+}
+
+.yq-active {
+    margin-top: 10px;
+}
+
+.yq-active span {
+    color: #b5621b;
+}
+
+.yq-active span:nth-child(1) {
+    color: #9e9eab;
+}
+
+.yq-active span:nth-child(3) {
+    margin-left: 280px;
+}
+
+.yq-offActive {
+    width: 510px;
+    height: 154px;
+    position: absolute;
+    left: -1px;
+    top: 141px;
+    display: none;
+    z-index: 99;
+}
+
+.yq-offActive .yq-offClose {
+    width: 45px;
+    height: 15px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+/*中间价格区域样式*/
+/*快递购买数量等信息*/
+/*地址快递信息*/
+.yq-buyWay {
+    margin-top: 10px;
+}
+
+.yq-buyWay .yq-express {
+    position: relative;
+}
+
+.yq-buyWay .yq-express .yq-city {
+    width: 50px;
+    position: absolute;
+    top: -1px;
+    left: 132px;
+}
+
+.yq-express .yq-city select {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.yq-buyWay .yq-express span:nth-child(2) {
+    margin-left: 50px;
+}
+
+.yq-buyWay .yq-express span:nth-child(n+2) {
+    color: #000000;
+}
+
+.yq-express span:last-child {
+    margin-left: 74px;
+}
+
+/*地址快递信息*/
+/*积分评价部分*/
+.yq-buyWay .yq-commment {
+    margin-top: 10px;
+}
+
+.yq-commment ul {
+    width: 480px;
+    height: 36px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top: 1px dotted #000000;
+    border-bottom: 1px dotted #000000;
+}
+
+.yq-commment li {
+    float: left;
+    width: 159px;
+    margin-top: 6px;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+    border-right: 1px solid #9e9eab;
+}
+
+.yq-commment li:last-child {
+    border: none;
+}
+
+.yq-commment li span {
+    color: #ff0036;
+    font-family: 'microsoft yahei';
+}
+
+/*积分评价部分*/
+/*购买数量部分*/
+.yq-buyWay .yq-pieces {
+    margin-top: 10px;
+    position: relative;
+}
+
+.yq-pieces input {
+    margin-left: 50px;
+    width: 35px;
+    height: 30px;
+    padding-left: 5px;
+    outline: none;
+    color: #9e9eab;
+}
+
+.yq-pieces span.yq-inc,
+.yq-pieces span.yq-dec {
+    position: absolute;
+    left: 126px;
+    width: 16px;
+    height: 13px;
+    border: 1px solid #cccccc;
+    text-align: center;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+.yq-pieces span.yq-dec {
+    top: 21px;
+}
+
+.yq-pieces .yq-jian {
+    margin-left: 23px;
+}
+
+/*购买数量部分*/
+/*购买部分*/
+.yq-toBuy {
+    margin-top: 15px;
+}
+
+.yq-toBuy div {
+    float: left;
+}
+
+.yq-toBuy div:first-child {
+    width: 178px;
+    height: 38px;
+    border: 1px solid #ff0036;
+    background-color: #ffeded;
+    text-align: center;
+    line-height: 38px;
+    font-size: 18px;
+    margin-left: 77px;
+}
+
+.yq-toBuy div:first-child a {
+    color: #ff4241;
+    text-decoration: none;
+}
+
+.yq-toBuy div:last-child {
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #ff0036;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.yq-toBuy div:last-child a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*购买部分*/
+/*底部服务信息*/
+.yq-service {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 49px;
+}
+
+.yq-service p span {
+    margin-left: 20px;
+}
+
+.yq-service p span:last-child {
+    margin-left: 110px;
+}
+
+.yq-service span:last-child b {
+    cursor: pointer;
+}
+
+.yq-payWay {
+    width: 191px;
+    height: 74px;
+    position: absolute;
+    left: 319px;
+    top: 398px;
+    display: none;
+}
+
+.yq-payWay .yq-payClose {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 70px;
+    height: 15px;
+}
+
+/*底部服务信息*/
+/*快递购买数量等信息*/
+/*右侧轮播图*/
+.yq-lunBo {
+    position: absolute;
+    top: 0;
+    right: 110px;
+}
+
+.yq-lunBo div:first-child {
+    width: 142px;
+    height: 460px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.yq-lunBo div ul {
+    width: 142px;
+    height: 400%;
+    position: absolute;
+}
+
+.yq-lunBo div ul li {
+    width: 142px;
+    height: 460px;
+}
+
+.yq-slideButton {
+    width: 142px;
+    height: 47px;
+    position: absolute;
+    top: 460px;
+    left: 6px;
+}
+
+.yq-lunBo span:last-child {
+    display: inline-block;
+    width: 47px;
+    margin-left: 35px;
+}
+
+/*轮播图end*/
+.yq-shopComment {
+    position: absolute;
+    top: 555px;
+    left: 0;
+}
+
+.yq-closetName {
+    width: 188px;
+    height: 48px;
+    position: absolute;
+    background-color: #fafafa;
+    text-align: center;
+    line-height: 48px;
+    font-family: 'microsoft yahei';
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.yq-shopCommentTop {
+    width: 788px;
+    height: 48px;
+    position: absolute;
+    left: 218px;
+    top: 0;
+}
+
+.yq-shopCommentTop ul {
+    position: absolute;
+    width: 788px;
+    height: 48px;
+    line-height: 48px;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+}
+
+.yq-shopCommentTop ul li {
+    float: left;
+}
+
+.yq-shopCommentTop ul li:first-child {
+    width: 88px;
+    height: 46px;
+    /*border: 1px solid #e6e6e6;*/
+    border-right: 1px solid #e6e6e6;
+    text-align: center;
+    font: bold 12px/46px 'microsoft yahei';
+    cursor: pointer;
+}
+
+.yq-shopCommentTop ul li:nth-child(2) {
+    width: 114px;
+    height: 46px;
+    font: bold 12px/46px 'microsoft yahei';
+    text-align: center;
+    /*border: 1px solid #e6e6e6;*/
+    border-right: 1px solid #e6e6e6;
+    margin-left: -1px;
+}
+
+.yq-shopCommentTop ul li:first-child:hover,
+.yq-shopCommentTop ul li:nth-child(2):hover {
+    border-top: 2px solid #ff0036;
+    height: 45px;
+    border-right: 1px solid #e6e6e6;
+    color: #ff0036;
+}
+
+.yq-shopCommentTop li:last-child {
+    width: 156px;
+    height: 48px;
+    margin-left: 429px;
+    text-align: center;
+    cursor: pointer;
+    color: #a4b1d8;
+    font-size: 12px;
+}
+
+.yq-bigEWM {
+    width: 156px;
+    position: absolute;
+    left: 633px;
+    top: 50px;
+    display: none;
+    z-index: 999;
+}
+
+.yq-right {
+    width: 270px;
+    height: 48px;
+    position: absolute;
+    top: 0px;
+    left: 1007px;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    display: none;
+}
+
+.yq-left {
+    width: 319px;
+    height: 48px;
+    border: 1px solid #e6e6e6;
+    position: absolute;
+    top: 0px;
+    left: -102px;
+    display: none;
+    background-color: #fff;
+}
+
+.yq-left img {
+    margin-right: 0;
+}
+.yq-bottomContent{
+    position: absolute;
+    top: 606px;
+    width: 1040px;
+    overflow: hidden;
+}
+.yq-bottomContent ul{
+    width: 1040px;
+    overflow: hidden;
+}

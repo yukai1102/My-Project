@@ -1,0 +1,58 @@
+@charset "utf-8";
+/*初始化-start*/
+body {
+    color: #333;
+    background: #fff;
+}
+body, th, td, .p1, .p2 {
+    font-family: arial
+}
+body,p, form, ol, ul, li, dl, dt, dd, h3 {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+table, img {
+    border: 0
+}
+/*初始化-end*/
+/*设置版心-start*/
+.yq-content {
+    width: 990px;
+    margin: 0 auto;
+}
+/*设置版心-end*/
+/*设置立即购买跳转样式-start*/
+.yq-content li {
+    position: relative;
+}
+.yq-content li a{
+    width: 90px;
+    height: 25px;
+    z-index: 99;
+}
+.yq-content li .yq-buy1,
+.yq-content li .yq-buy2,
+.yq-content li .yq-buy3{
+    position: absolute;
+    top: 535px;
+}
+.yq-content li .yq-buy4,
+.yq-content li .yq-buy5,
+.yq-content li .yq-buy6{
+    position: absolute;
+    bottom: 71px;
+}
+.yq-content li .yq-buy1,
+.yq-content li .yq-buy4{
+    left: 222px;
+}
+.yq-content li .yq-buy2,
+.yq-content li .yq-buy5{
+    left: 562px;
+}
+.yq-content li .yq-buy3,
+.yq-content li .yq-buy6{
+    right: 0;
+}
+/*设置立即购买跳转样式-end*/

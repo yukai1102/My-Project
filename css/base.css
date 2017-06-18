@@ -1,0 +1,341 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;  /*清除元素的内外边距*/
+}
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;  /*外面环绕线*/
+}
+ul, ol {
+    list-style: none;
+}
+/*去掉原样式中的小黑点*/
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";  /*字体的自动识别*/
+}
+select, input {
+    vertical-align: middle;
+}
+/*输入字居中显示*/
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+/**/
+textarea {
+    resize: none;  /*不可以随意拖动*/
+}
+/*防止拖动*/
+img {
+    border: 0;
+    vertical-align: middle; /*  去掉图片底部默认的3像素空白缝隙*/
+}
+table {
+    border-collapse: collapse; /*合并外连线*/
+}
+body {
+    font: 16px/150% "Microsoft Yahei", Arial, Verdana, "\5b8b\4f53"; /*unitedCode的写法，宋体的写法*/
+    color: #666; /*150%基于当前字体尺寸的百分比行间距*/
+    background: #fff;
+}
+.clearfix:before, .clearfix:after {
+    /*清除浮动，最好最标准的写法*/
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1; /*IE/7/6*/  /*兼容IE6下的写法*/
+}
+a {
+    color: #666;   /*a 标签是不继承颜色 的*/
+    text-decoration: none;
+}
+a:hover {
+    color: #C81623;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {  /*一般是起装饰作用*/
+    font-style: normal;  /*去掉原有的样式*/
+    text-decoration: none;  /*去掉下划线或是删除线*/
+}
+
+.col-red {
+    color: #f10214 !important;/*京东主色调*/
+}
+
+/*公共类*/
+.yk-inner {
+    /*版心 提取 */
+    width: 990px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+.pr{
+    position: relative;
+}
+.pa{
+    position: absolute;
+}
+/*css初始化结束*/
+/*导航上方通栏开始*/
+.yk-through{
+    height: 150px;
+    width: 100%;
+    /*margin: 0 auto;*/
+    background: url("../images/through.jpg") no-repeat;
+    /*overflow: hidden;*/
+    position: relative;
+    /*margin-bottom: 500px;*/
+}
+.yk-through-cont{
+    height: 120px;
+}
+.yk-through i{
+    display: block;
+    width: 92px;
+    height: 98px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -46px;
+    margin-top: -60px;
+    background: url("../images/bowulogo.png") no-repeat;
+
+}
+.yk-nav{
+    font-size: 14px;
+    font-family: "simsun";
+    font-weight: 700;
+    line-height: 30px;
+    position: relative;
+    height: 30px;
+
+}
+.yk-nav .yk-title{
+    color: #fff;
+    padding-right: 50px;
+    margin-right: 20px;
+    background: url("../images/arr-dn.png") no-repeat right;
+}
+.yk-nav .yk-title:hover{
+    background: url("../images/arr-up.png") no-repeat right;
+}
+.yk-hide{
+    display: none;
+    background-color: #9e2218;
+    position: absolute;
+    width: 158px;
+    line-height: 30px;
+    top: 28px;
+    left: -5px;
+    text-indent: 1em;
+    z-index: 100;
+}
+.yk-hide li a{
+    color: #fff;
+    font-weight: normal;
+}
+.yk-hide li a:hover{
+    text-decoration: underline;
+}
+.yk-nav-ul li{
+    float: left;
+    margin-right: 15px;
+}
+.yk-nav-ul li a{
+    color: #fff;
+    
+}
+/*导航上方通栏结束*/
+/*搜索框开始*/
+.yk-box{
+    position: relative;
+}
+.yk-keywords{
+    position: absolute;
+    z-index: 5;
+    top: 45px;
+    left:3px;
+    width: 373px;
+    border: 1px solid #eee;
+    display: none;
+}
+.yk-keywords li{
+    line-height: 24px;
+    background-color: #fff;
+    font-size: 12px;
+}
+.yk-search{
+    margin-top: 0;
+    height: 36px;
+}
+.yk-searchbox{
+    float: left;
+    width: 367px;
+    height: 22px;
+    padding: 4px 0 4px 8px;
+    border: 3px solid #ff0036;
+    border-right: none;
+}
+.yk-search .yk-tm{
+    float: left;
+    background-color: #ff0036;
+    width: 80px;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    margin-right: 2px;
+}
+.yk-search .yk-bd{
+    float: left;
+    background-color: #333;
+    width: 80px;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    margin-right: 80px;
+}
+/*搜索框结束*/
+
+/*售后服务项目开始*/
+.yk-serve{
+    border-top: 1px solid #d1d7dc;
+
+}
+.yk-serve .yk-yqtb{
+    width: 1180px;
+    margin: 64px auto;
+    padding-left: 50px;
+}
+.yk-serve .yk-yqtb li:first-child{
+    margin-left: 40px;
+}
+.yk-serve .yk-yqtb li{
+    position: relative;
+    padding-left: 70px;
+    margin-right: 90px;
+    cursor: pointer;
+}
+.yk-serve .yk-yqtb .iconfont{
+    height: 54px;
+    font-size: 54px;
+    color: #ff003a;
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+.yk-serve .yk-yqtb .desc p{
+    color: #b5b5b5;
+    font-size: 14px;
+    line-height: 24px;
+}
+.yk-serve .yk-yqtb .desc p:first-child{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color:#333;
+}
+/*售后服务项目结束*/
+
+/*指南开始*/
+.yk-guide{
+    margin: 0 auto;
+    width: 1196px;
+    border-top: 1px solid #ededed;
+    padding-left: 110px;
+    padding-top: 20px;
+}
+.yk-guide .yk-guide-in{
+    margin-right: 140px;
+    margin-left: 30px;
+}
+.yk-guide-in.sjtm{
+    margin-right: 0;
+}
+.yk-guide .yk-guide-in dt{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 34px;
+}
+.yk-guide .yk-guide-in dd{
+    font-size: 12px;
+    line-height: 20px;
+
+}
+.yk-guide .yk-guide-in dd a{
+    color: #8b8b8b;
+}
+.yk-guide .yk-guide-in dd a:hover{
+    text-decoration: underline;
+}
+.yk-guide .yk-guide-in.sjtm{
+    margin-left: -20px;
+}
+/*指南结束*/
+
+
+/*copyright开始*/
+.yk-copyright{
+    margin-top: 16px;
+    border-top: 2px solid #ff0036;
+    background-color: #000;
+    font-size: 12px;
+    padding-left: 80px;
+    padding-bottom: 56px;
+}
+.yk-about{
+    line-height: 34px;
+
+}
+.yk-about a{
+    color: #fff;
+    
+}
+.yk-about a:hover{
+    text-decoration: underline;
+}
+.yk-cert{
+    line-height: 28px;
+}
+/*copyright结束*/

@@ -1,0 +1,85 @@
+/*单品包邮部分 begin*/
+.wm{
+    margin-top:10px;
+    margin-bottom:10px;
+    display: none;
+}
+.wm .dingd{
+    display: inline-block;
+    height:162px;
+
+}
+/*单品包邮部分 end*/
+/*故宫部分 begin*/
+.wm1 {
+    height:340px;
+    margin-bottom:47px;
+    display: none;
+}
+.wm1 .ggcb{
+    display: inline-block;
+    width:490px;
+    height:340px;
+    float: left;
+}
+.wm1 .ggcb img{
+    width:490px;
+    height:340px;
+}
+.wm1 .ggpw{
+    display: inline-block;
+    width:490px;
+    height:340px;
+    float: right;
+}
+.wm1 .ggpw img{
+    width:490px;
+    height:340px;
+}
+/*故宫部分 end*/
+/*新品上架部分 begin*/
+.wmxp{
+    width:400px;
+    height:130px;
+    margin:0 auto;
+    /*margin-bottom:29px;*/
+}
+.wmxp img{
+    width: 400px;
+    height: 130px;
+}
+/*新品上架部分 end*/
+/*主体部分*/
+.wmzt{
+    height:500px;
+}
+.wmzt img {
+    width: 730px;
+    height: 500px;
+    float:left;
+}
+.wmzt .wmright{
+    height: 500px;
+    width: 250px;
+    float: right;
+}
+.wmzt .wmright .wmtp1{
+    display:inline-block;
+    width: 250px;
+    height:245px;
+}
+.wmzt .wmright .wmtp1 img {
+    width: 250px;
+    height:245px;
+}
+
+.wmzt .wmright .wmtp2{
+    display:inline-block;
+    width: 250px;
+    height:245px;
+}
+.wmzt .wmright .wmtp2 img {
+    width: 250px;
+    height:250px;
+}
+/*主体部分*/
